@@ -1,0 +1,13 @@
+services:
+  ppt:
+    build:
+      context: .
+      network: host
+    network_mode: host
+    container_name: ppt-generator
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    working_dir: /app
+    command: npm start

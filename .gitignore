@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+package-lock.json
+
+# Salida generada
+output/*.pptx
+!output/.gitkeep
+
+# Variables de entorno
+.env
+
+# Archivos del SO
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+{
+  "name": "ppt-generator",
+  "version": "1.0.0",
+  "description": "Generador de presentaciones a partir de Markdown",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^16.0.0",
+    "pptxgenjs": "^4.0.1"
+  }
+}
