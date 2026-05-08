@@ -7,6 +7,12 @@
 Una herramienta ligera y portátil para generar presentaciones de PowerPoint (`.pptx`) a partir de archivos Markdown (`.md`). Diseñada para ser fácil de usar por usuarios no técnicos y construida sobre Docker para no requerir instalación de NodeJS ni dependencias locales.
 
 > **💡 Nota sobre Pandoc:** Esta herramienta puede considerarse una alternativa simplificada y altamente enfocada frente a `pandoc`. Mientras que Pandoc es un conversor universal (y pesado) para múltiples formatos, este proyecto busca ofrecer una solución "llave en mano", súper liviana y específicamente diseñada para generar presentaciones modernas y vistosas en PPTX sin tener que lidiar con instalaciones de LaTeX, librerías complejas o configuraciones avanzadas.
+>
+> A modo de comparación, una conversión básica pura con Pandoc requeriría tenerlo instalado en el sistema operativo y ejecutar:
+> ```bash
+> pandoc input/presentacion.md -o output/presentacion.pptx
+> ```
+> A diferencia de ese enfoque crudo, esta herramienta (vía `index.js`) inyecta automáticamente estilos corporativos, procesa viñetas de manera enriquecida y estructura las diapositivas visualmente (portadas vs. divisores vs. contenido) de forma nativa.
 ## 🚀 Características
 - **Sin Dependencias Locales**: Todo corre encapsulado en un contenedor de Docker liviano (Alpine).
 - **Desacoplado**: El contenido vive en archivos Markdown fáciles de leer y editar.
